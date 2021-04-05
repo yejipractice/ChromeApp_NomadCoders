@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.js-weather {
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.greetingDiv {
+  display: flex;
+  align-items: center;
+}
+
+.js-delbtn {
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.greetings,
+.form,
+.js-delbtn {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIN {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
